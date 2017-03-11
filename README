@@ -1,0 +1,8 @@
+
+docker build -t stress .
+
+
+产生12个cpu进程6个io进程1分钟后停止运行
+docker run -it --rm stress -c 12 -i 6 --verbose --timeout 1m 
+
+
